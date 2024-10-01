@@ -1,0 +1,208 @@
+/* @font-face {
+    font-family: 'juana';
+    src: url(/src/assets/fonts/Fontspring-DEMO-juana-extralight.otf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'juana';
+    font-size: 20px;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; 
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 1500px;
+    margin: 0 auto;
+}
+.header__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__content h1{
+    font-size: 100px;
+
+}
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.amount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.amount input{
+    height: 50px;
+    color: black;
+    padding: 0 10px;
+    border: none;
+    outline:none;
+}
+#dropList{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+select{
+    background-color: blue;
+    border: none;
+    outline: none;
+}
+button{
+    background-color: blue;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.result p{
+    font-size: 20px;
+    color: white;
+    border-radius: 1px solid blue;
+} */
+@font-face {
+    font-family: 'juana';
+    src: url(/src/assets/fonts/Fontspring-DEMO-juana-extralight.otf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'juana';
+    font-size: 20px;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; 
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 100%; /* Remplace 1500px par 100% pour l'adapter à l'écran */
+    max-width: 1500px; /* Ajoute une largeur maximale */
+    margin: 0 auto;
+}
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__content h1 {
+    font-size: 100px;
+}
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.amount input {
+    height: 50px;
+    color: black;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+}
+#dropList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+select {
+    background-color: blue;
+    border: none;
+    outline: none;
+}
+button {
+    background-color: blue;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.result p {
+    font-size: 20px;
+    color: white;
+    border-radius: 1px solid blue;
+}
+
+/* Media Queries pour la Responsivité */
+@media (max-width: 1024px) {
+    .header__content h1 {
+        font-size: 80px; /* Réduit la taille du titre */
+    }
+    .container {
+        padding: 0 20px; /* Ajoute un padding pour les petits écrans */
+    }
+}
+
+@media (max-width: 768px) {
+    .header__content h1 {
+        font-size: 60px; /* Réduit encore la taille du titre */
+    }
+    .amount input {
+        width: 90%; /* Réduit la largeur de l'input */
+        height: 40px; /* Réduit la hauteur de l'input */
+    }
+    #dropList {
+        flex-direction: column; /* Change la direction pour les petits écrans */
+        align-items: flex-start; /* Aligne les éléments au début */
+        padding: 20px; /* Réduit le padding */
+    }
+    select {
+        width: 100%; /* Permet aux selects d'utiliser toute la largeur */
+        margin: 10px 0; /* Ajoute un espace entre les selects */
+    }
+    button {
+        width: 100%; /* Fait en sorte que le bouton occupe toute la largeur */
+    }
+}
+
+@media (max-width: 480px) {
+    .header__content h1 {
+        font-size: 40px; /* Taille très réduite pour les petits écrans */
+    }
+    .amount input {
+        height: 35px; /* Ajuste la hauteur de l'input */
+    }
+    .result p {
+        font-size: 16px; /* Réduit la taille du texte dans le résultat */
+    }
+}
